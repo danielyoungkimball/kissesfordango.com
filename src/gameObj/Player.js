@@ -10,7 +10,6 @@ export default function Player() {
 
   useEffect(() => {
     setInputStyle({ left: pos.toString() + "%" })
-    console.log(inputStyle)
   }, [setInputStyle, pos]);
 
   return (
