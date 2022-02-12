@@ -1,11 +1,11 @@
 import React from 'react';
 import Player from "./gameObj/Player";
 import Kimi from "./gameObj/Kimi";
-import { useRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { posState } from './states';
 
 export default function Main() {
-  const [_pos, setPos] = useRecoilState(posState);
+  const setPos = useSetRecoilState(posState);
 
   const handlePos = (event) => {
     setPos(event.target.value);
