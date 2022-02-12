@@ -43,7 +43,7 @@ export default function Kimi({ props }) {
 
 
     setInputStyle({ top: Ypos.toString() + "%", left: Xpos.toString() + "%" })
-
+    // eslint-disable-next-line
   }, [setYPos, setInputStyle, mydog])
 
   return (

@@ -28,7 +28,7 @@ export default function Main() {
 
 
     setHearts([...hearts, { key: counter }]);
-
+    // eslint-disable-next-line
   }, [setHearts, counter]);
 
 
