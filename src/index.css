@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #8D3B72;
+    color: white;
+    padding: 4vh;
+}
+
+
+.kimi_img {
+    position: absolute;
+    width: 10vw;
+    bottom: 0;
+}
+
+.Kimi {
+    position: absolute;
+    width: 10vw;
+    height: 7vw;
+    left: 38vw;
+    top: 12vh;
+    bottom: 0;
+    /* background-color: #000000; */
+}
+
+.dango {
+    position:absolute;
+    width: 10vw;
+    bottom: 0;
+}
+
+.Player {
+    position: absolute;
+    bottom: 20vh;
+    width: 10vw;
+    height: 7vw;
+    /* background-color: #000000; */
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #8A7090;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .game_container {
+        width: 100%;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .game_container {
+        width: 540px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 780px) {
+    .game_container {
+        width: 780px;
+    }
+}
+
+.game_container {
+    position: relative;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 100vh;
+    background-color: #B5D8CC;
+}
+
+.game_view {
+    height: 68vh;
+    overflow: hidden;
+}
+
+.controller_container {
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: #8D3B72;
+}
+
+.LeftBtn {
+    position: absolute;
+    width: 50%;
+    top: 10px;
+    left: 0;
+    bottom: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.RightBtn {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
