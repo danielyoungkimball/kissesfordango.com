@@ -1,5 +1,6 @@
 
 import kimi from "./kimi.png"
+
 export default function Kimi() {
   return (
     <div className="Kimi">
