@@ -7,20 +7,9 @@ import { posState } from './states';
 export default function Main() {
   const [pos, setPos] = useRecoilState(posState);
 
-  const handleLeft = () => {
-    let temp = pos;
-    if (pos !== 10) {
-      setPos(temp -= 5);
-    }
+  const handlePos = (event) => {
+    setPos(event.target.value);
   }
-
-  const handleRight = () => {
-    let temp = pos;
-    if (pos !== 80) {
-      setPos(temp += 5);
-    }
-  }
-
 
   return (
     <div className="container">
@@ -34,12 +23,9 @@ export default function Main() {
         </div>
 
         <div className='controller_container'>
-          <button className='LeftBtn' onClick={handleLeft}>
-            Left
-          </button>
-          <button className='RightBtn' onClick={handleRight}>
-            Right
-          </button>
+          <div className="slidecontainer">
+            <input className="slider" type="range" min="1" max="90" value="45" className="slider" id="myRange" onChange={handlePos} />
+          </div>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { posState } from "../states";
 import dango from "./dango.png"
@@ -6,13 +6,15 @@ import dango from "./dango.png"
 export default function Player() {
   const pos = useRecoilValue(posState);
 
-  useEffect(() => {
-    console.log(pos)
-  });
+  const [inputStyle, setInputStyle] = useState({ left: '35%' })
 
-  console.log(pos)
+  useEffect(() => {
+    setInputStyle({ left: pos.toString() + "%" })
+    console.log(inputStyle)
+  }, [setInputStyle, pos]);
+
   return (
-    <div className="Player" css={"left: " + pos.toString() + "%"}>
+    <div className="Player" style={inputStyle}>
       <img src={dango} alt="dango" className="dango" />
     </div>
   );
